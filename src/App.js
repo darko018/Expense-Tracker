@@ -1,3 +1,4 @@
+import React from "react";
 import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
 
@@ -31,5 +32,14 @@ function App() {
     </div>
   );
 }
+
+//                       Under the hood of return, same as return above                    \\
+
+// return React.createElement(
+//   'div',
+//   {},
+//   React.createElement('h2', {}, "Let's get started!"),
+//   React.createElement(Expenses, {items: expenses} )
+// )
 
 export default App;
