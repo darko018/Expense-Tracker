@@ -1,8 +1,8 @@
 import React from "react";
-import ExpenseItem from "./components/ExpenseItem";
-import Expenses from "./components/Expenses";
+import ExpenseItem from "./components/Expenses/ExpenseItem";
+import Expenses from "./components/Expenses/Expenses";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -31,7 +31,7 @@ function App() {
       <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 //                       Under the hood of return, same as return above                    \\
 
